@@ -9,10 +9,10 @@ class BarChart extends Component {
 
     drawChart() {
 
-        let w = 700;
-        let h = 300;
+        let w = this.props.width;
+        let h = this.props.height;
 
-        const data = [12, 5, 6, 6, 9, 10];
+        const data = this.props.data;
 
         const svg = d3.select("body")
             .append("svg")
