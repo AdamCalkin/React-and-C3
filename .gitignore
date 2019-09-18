@@ -10,6 +10,7 @@
 
 # production
 /build
+/CoffeeScript
 
 # misc
 .DS_Store

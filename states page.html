@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://wb.gs/stats.html -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Web Genius Server Stats</title>
+		
+		<!-- Load c3.css -->
+		<link href="./c3-0.7.1/c3.css" rel="stylesheet">
+
+		<!-- Load d3.js and c3.js -->
+		<script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+		<script src="./c3-0.7.1/c3.min.js"></script>
+
+		<link rel="stylesheet" href="./files/bootstrap.css">
+		<script src="./files/jquery.js"></script>
+		<script src="./files/underscore.js"></script>
+		<script src="./files/Stats.js"></script>
+		<script src="./files/StatsDataSource.js"></script>
+		<script src="./files/StatsDataSourceTimes.js"></script>
+		<script src="./files/StatsDatsaSourceDomains.js"></script>
+		<script src="./files/StatsDataSourceHits.js"></script>
+		<script src="./files/StatsDataSourceIPs.js"></script>
+		<script src="./files/StatsDataSourceLoads.js"></script>
+		<script src="./files/StatsDataSourceWriting.js"></script>
+		<style>
+			body {
+				background-color: white;
+				margin: 14px;
+				font-family: Arial;
+				font-size: 11px;
+			}
+
+			.well {
+				padding: 6px 14px;
+			}
+
+			.table {
+				margin-bottom: 0;
+			}
+
+			:-webkit-full-screen .fullscreen {
+				display: none;
+			}
+		</style>
+		<script>
+		$(function() { new Stats; });
+		</script>
+	</head>
+	<body cz-shortcut-listen="true">
+		<a href="https://wb.gs/stats.html#" class="fullscreen">Fullscreen</a>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-6 domains">
+					<div class="well">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Domain</th>
+									<th>Hits / 1,000</th>
+								</tr>
+							</thead>
+							<tbody><tr> <td>www.service-is-paramount.co.nz</td> <td>31</td> </tr><tr> <td>www.actionsafety.co.nz</td> <td>27</td> </tr><tr> <td>www.hayleysadvantis.com</td> <td>27</td> </tr><tr> <td>www.gtenvironmental.co.nz</td> <td>20</td> </tr><tr> <td>www.wellintouch.co.nz</td> <td>19</td> </tr><tr> <td>www.salonsgroup.com</td> <td>18</td> </tr><tr> <td>containeroffice.lk</td> <td>17</td> </tr><tr> <td>www.bathroombuildingcompany.co.nz</td> <td>15</td> </tr><tr> <td>www.mechanictauranga.co.nz</td> <td>15</td> </tr><tr> <td>www.polydime.com</td> <td>14</td> </tr></tbody>
+						</table>
+					</div>
+
+					<div class="well ips">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>IP</th>
+									<th>Hits / 1,000</th>
+								</tr>
+							</thead>
+							<tbody><tr> <td>37.17.172.132</td> <td>19</td> </tr><tr> <td>213.239.206.90</td> <td>19</td> </tr><tr> <td>199.180.134.170</td> <td>16</td> </tr><tr> <td>62.210.202.81</td> <td>15</td> </tr><tr> <td>69.162.124.231</td> <td>15</td> </tr><tr> <td>180.153.108.224</td> <td>14</td> </tr><tr> <td>119.123.202.203</td> <td>9</td> </tr><tr> <td>99.182.10.134</td> <td>9</td> </tr><tr> <td>162.27.66.130</td> <td>9</td> </tr><tr> <td>166.216.165.19</td> <td>9</td> </tr></tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="col-xs-6 scriptTimes">
+					<div class="well">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Last N</th>
+									<th>Page Gen Time</th>
+								</tr>
+							</thead>
+							<tbody><tr> <td>10</td> <td>0.5243</td> </tr> <tr> <td>50</td> <td>0.4894</td> </tr> <tr> <td>200</td> <td>0.4166</td> </tr> <tr> <td>1000</td> <td>0.3993</td> </tr></tbody>
+						</table>
+					</div>
+
+					<div class="well hits">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Minutes</th>
+									<th>Hits</th>
+								</tr>
+							</thead>
+							<tbody><tr> <td>1</td> <td>46</td> </tr> <tr> <td>5</td> <td>218</td> </tr> <tr> <td>15</td> <td>739</td> </tr> <tr> <td>60</td> <td>3000</td> </tr></tbody>
+						</table>
+					</div>
+
+					<div class="well loads">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Server</th>
+									<th>1</th>
+									<th>5</th>
+									<th>15</th>
+								</tr>
+							</thead>
+							<tbody><tr> <td>akl1.wb.gs</td> <td>0.67</td> <td>0.88</td> <td>1.08</td> </tr><tr> <td>akl2.wb.gs</td> <td>0.89</td> <td>0.84</td> <td>0.87</td> </tr></tbody>
+						</table>
+					</div>
+
+					<div class="well writing">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Server</th>
+									<th>Writing</th>
+								</tr>
+							</thead>
+							<tbody><tr> <td>akl1.wb.gs</td> <td>1</td> </tr><tr> <td>akl2.wb.gs</td> <td>3</td> </tr></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+</body></html>
